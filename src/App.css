@@ -1,13 +1,17 @@
 body {
     font-family: 'Josefin Sans';
     background-color: #FFFAFB;
+    width: 100%;
   }
   
   * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
-  
+    box-sizing: border-box;  
+  }
+
+  #root {
+    width: 100%;
   }
   
   ::-webkit-scrollbar {
@@ -52,17 +56,36 @@ body {
     width: 729px;
     height: 742px;
   }
+
+  .top-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #FF2625;
+    transition: .2s linear;
+  }
+
+  .top-link:hover::after {
+    width: 100%;
+  }
   
   .hero-banner-img {
     position: absolute;
-    right: 40px;
+    right: 50px;
     top: 0px;
     width: 700px;
-    height: 900px;
-    margin-top: -330px;
+    height: 800px;
+    /* margin-top: -330px; */
   
   }
   
+  .search-exercises {
+    width: 100%;
+  }
+
   .exercise-card {
     width: 400px;
     height: 445px;
@@ -91,7 +114,9 @@ body {
   .bodyPart-card:hover {
     transform: scale(1.1, 1.1);
   }
-  
+  .search-btn {
+    border: 1px solid transparent !important;
+  }
   .search-btn:hover {
     color: #FF2625 !important;
     border: 1px solid #FF2625 !important;

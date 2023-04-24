@@ -7,7 +7,7 @@ import Exercises from '../components/Exercises'
 
 const Home = () => {
   return (
-    <Box>
+    <Box margin={'0 70px'}>
       <HeroBanner/>
       <SearchExercises/>
       <Exercises/>

@@ -10,15 +10,19 @@ import './App.css';
 
 const App = () => {
   return (
+    <>
     <Box width={"400px"} 
-        marginLeft={'70px'}>
+        margin={'0 70px'}>
       <Navbar/>
+    </Box>
+    <Box>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/exercise/:id' element={<ExerciseDetail/>} />
       </Routes>
       <Footer/>
     </Box>
+    </>
   )
 }
 
